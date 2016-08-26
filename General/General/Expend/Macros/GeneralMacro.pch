@@ -1,0 +1,18 @@
+//
+//  GeneralMacro.pch
+//  General
+//
+//  Created by llbt on 16/8/26.
+//  Copyright © 2016年 Huang. All rights reserved.
+//
+
+#ifndef GeneralMacro_pch
+#define GeneralMacro_pch
+
+// 屏宽高
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+
+
+#endif /* GeneralMacro_pch */

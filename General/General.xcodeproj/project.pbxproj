@@ -41,6 +41,7 @@
 		E72ACC921D6EE28A001ACE21 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E72ACC931D6EE28A001ACE21 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E72ACC9A1D6EE2A1001ACE21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = General/Info.plist; sourceTree = SOURCE_ROOT; };
+		E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMacro.pch; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +107,8 @@
 		E72ACC551D6EDFC7001ACE21 /* Expend */ = {
 			isa = PBXGroup;
 			children = (
+				E72ACCAC1D703677001ACE21 /* Macros */,
+				E72ACCAB1D703626001ACE21 /* Extension */,
 			);
 			path = Expend;
 			sourceTree = "<group>";
@@ -145,6 +148,21 @@
 				E72ACC931D6EE28A001ACE21 /* ViewController.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		E72ACCAB1D703626001ACE21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E72ACCAC1D703677001ACE21 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +345,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/General/Expend/Macros/GeneralMacro.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -369,6 +388,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/General/Expend/Macros/GeneralMacro.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
