@@ -13,6 +13,8 @@
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
+// 头文件
+#import <Masonry.h>
 
 
 #endif /* GeneralMacro_pch */
