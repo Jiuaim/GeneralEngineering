@@ -45,6 +45,7 @@
 		E72ACC931D6EE28A001ACE21 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E72ACC9A1D6EE2A1001ACE21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = General/Info.plist; sourceTree = SOURCE_ROOT; };
 		E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMacro.pch; sourceTree = "<group>"; };
+		E7531A141D744BD2006906F0 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -166,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */,
+				E7531A141D744BD2006906F0 /* Category.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

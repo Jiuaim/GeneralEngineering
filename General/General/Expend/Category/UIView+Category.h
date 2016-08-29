@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry.h>
 
 @interface UIView (Category)
 
@@ -15,10 +16,24 @@
  */
 + (UIWindow *)lastWindow;
 
-
 /**
  *  快速垂直布局
  */
 - (UIView *)addSubviewsWithVerticalLayout:(NSArray *)viewArr offsets:(NSArray *)offsetArr;
 
+/**
+ *  给view包一层
+ */
+- (UIView *)wrapperViewWithEdges:(UIRectEdge)edges;
+
+/**
+ *  水平等分控件
+ *
+ *  @param viewName  view的名字数组
+ *  @param categorys 边距、间隔、顶部、底部
+ *  @param portion   宽高比
+ *
+ *  @return 底层view
+ */
++ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName categorys:(NSArray *)categorys HVPortion:(CGFloat)portion;
 @end

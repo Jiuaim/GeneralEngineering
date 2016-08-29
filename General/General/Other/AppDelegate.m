@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDatabase.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,11 @@
     // 数据库
     self.database = [[AppDatabase alloc] initWithMigrations];
     NSLog(@"%@",NSHomeDirectory());
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
