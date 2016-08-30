@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Category.h"
+#import <objc/runtime.h>
 
 @implementation UIView (Category)
 
@@ -70,7 +71,7 @@
     return wrapperView;
 }
 
-+ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName categorys:(NSArray *)categorys HVPortion:(CGFloat)portion {
++ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName eventBlock:(void(^)(UIView *touchView))block categorys:(NSArray *)categorys HVPortion:(CGFloat)portion {
     CGFloat padding = [categorys[0] floatValue];
     CGFloat inter = [categorys[1] floatValue];
     CGFloat top = [categorys[2] floatValue];
@@ -90,7 +91,21 @@
             make.width.equalTo(@(width));
             make.height.equalTo(@(width * portion));
         }];
+        [view addEventWithBlock:block];
     }
     return baseView;
 }
+
+- (void)addEventWithBlock:(void(^)(UIView *touchView))event {
+    WEAK(self)
+    if ([self isKindOfClass:[UILabel class]] || [self isKindOfClass:[UIImageView class]]) {
+        self.userInteractionEnabled = YES;
+    }
+    UITapGestureRecognizer *tap = [UITapGestureRecognizer bk_recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
+        BLOCK_EXEC(event, weakself);
+    }];
+    [self addGestureRecognizer:tap];
+}
+
+
 @end

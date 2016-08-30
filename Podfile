@@ -15,6 +15,8 @@ target :General do
 	pod 'MJRefresh', '~> 3.1.12'
 	pod 'MJExtension', '~> 3.0.13'
 	pod 'Masonry', '~> 1.0.1'
+	pod 'BlocksKit', '~> 2.2.5'
+
 
 
 	project 'General/General.xcodeproj'

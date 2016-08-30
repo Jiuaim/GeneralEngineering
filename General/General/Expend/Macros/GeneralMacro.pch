@@ -9,16 +9,14 @@
 #ifndef GeneralMacro_pch
 #define GeneralMacro_pch
 
-// 屏宽高
-#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
-#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
-// 随机色
-
-#import "Category.h"
-// 头文件
-#import <Masonry.h>
 
 
-#define kScaleFrom_iPhone6(_X_) (_X_ * (kWindowWidth/375))
-#define kRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+#import "Category.h"// 分类
+#import "HeaderFile.h"// 头文件
+#import "ShortCutMacro.h"// 通用宏定义
+#import "Link.h"// 接口定义相关
+#import "Const.h"// 常量
+
+
+
 #endif /* GeneralMacro_pch */

@@ -46,6 +46,10 @@
 		E72ACC9A1D6EE2A1001ACE21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = General/Info.plist; sourceTree = SOURCE_ROOT; };
 		E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMacro.pch; sourceTree = "<group>"; };
 		E7531A141D744BD2006906F0 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		E7548FA51D751B200013B3D8 /* HeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		E7548FA61D751B730013B3D8 /* ShortCutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortCutMacro.h; sourceTree = "<group>"; };
+		E7548FA71D751C950013B3D8 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		E7548FA81D751CAA0013B3D8 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,10 @@
 			children = (
 				E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */,
 				E7531A141D744BD2006906F0 /* Category.h */,
+				E7548FA51D751B200013B3D8 /* HeaderFile.h */,
+				E7548FA61D751B730013B3D8 /* ShortCutMacro.h */,
+				E7548FA71D751C950013B3D8 /* Link.h */,
+				E7548FA81D751CAA0013B3D8 /* Const.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
