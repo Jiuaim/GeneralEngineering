@@ -7,7 +7,6 @@
 //
 
 #import "UIView+Category.h"
-#import <objc/runtime.h>
 
 @implementation UIView (Category)
 

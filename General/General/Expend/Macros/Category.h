@@ -11,5 +11,6 @@
 
 
 #import "UIView+Category.h"
+#import "UIViewController+Category.h"
 
 #endif /* Category_h */

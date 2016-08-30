@@ -20,6 +20,7 @@
 		E72ACC981D6EE28A001ACE21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ACC911D6EE28A001ACE21 /* main.m */; };
 		E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ACC931D6EE28A001ACE21 /* ViewController.m */; };
 		E72ACC9B1D6EE2A1001ACE21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72ACC9A1D6EE2A1001ACE21 /* Info.plist */; };
+		E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		E7548FA61D751B730013B3D8 /* ShortCutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortCutMacro.h; sourceTree = "<group>"; };
 		E7548FA71D751C950013B3D8 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
 		E7548FA81D751CAA0013B3D8 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		E78AB0491D7562F100DA1939 /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
+		E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +92,8 @@
 			children = (
 				E708F3231D703FE40050FF34 /* UIView+Category.h */,
 				E708F3241D703FE40050FF34 /* UIView+Category.m */,
+				E78AB0491D7562F100DA1939 /* UIViewController+Category.h */,
+				E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */,
 				E708F3251D703FE40050FF34 /* UIView+Category.m in Sources */,
 				E72ACC981D6EE28A001ACE21 /* main.m in Sources */,
+				E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */,
 				E72ACC941D6EE28A001ACE21 /* AppDelegate.m in Sources */,
 				E72ACC731D6EDFC7001ACE21 /* MojoModel.m in Sources */,
 				E72ACC721D6EDFC7001ACE21 /* MojoDatabase.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -17,17 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIView *contentView = [self scrollBaseViewController];
     UIView *viw = [UIView horizonSeperateViewWithArray:@[@"UIView",@"UIButton",@"UIImageView"] eventBlock:^(UIView *touchView) {
         NSLog(@"%@",NSStringFromClass([touchView class]));
     } categorys:@[@10,@5,@10,@10] HVPortion:3/4.0];
-    [self.view addSubview:viw];
-    [viw mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.equalTo(self.view);
-        make.width.equalTo(@(kScreenWidth));
-    }];
+    UIView *viw1 = [UIView horizonSeperateViewWithArray:@[@"UIView",@"UIButton",@"UIImageView"] eventBlock:^(UIView *touchView) {
+        NSLog(@"%@",NSStringFromClass([touchView class]));
+    } categorys:@[@10,@5,@10,@10] HVPortion:3/4.0];
+    UIView *viw2 = [UIView horizonSeperateViewWithArray:@[@"UIView",@"UIButton",@"UIImageView"] eventBlock:^(UIView *touchView) {
+        NSLog(@"%@",NSStringFromClass([touchView class]));
+    } categorys:@[@10,@5,@10,@10] HVPortion:3/4.0];
+    [contentView addSubviewsWithVerticalLayout:@[viw,viw1,viw2] offsets:@[@10,@200,@300]];
+    
     
 }
-
 
 
 @end
