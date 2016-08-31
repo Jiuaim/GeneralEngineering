@@ -21,6 +21,9 @@
 		E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ACC931D6EE28A001ACE21 /* ViewController.m */; };
 		E72ACC9B1D6EE2A1001ACE21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72ACC9A1D6EE2A1001ACE21 /* Info.plist */; };
 		E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */; };
+		E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0501D75A93900DA1939 /* SZMeViewController.m */; };
+		E78AB0541D75A94900DA1939 /* SZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0531D75A94900DA1939 /* SZHomeViewController.m */; };
+		E78AB0591D75AA6A00DA1939 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,12 @@
 		E7548FA81D751CAA0013B3D8 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		E78AB0491D7562F100DA1939 /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
 		E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
+		E78AB04F1D75A93900DA1939 /* SZMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZMeViewController.h; sourceTree = "<group>"; };
+		E78AB0501D75A93900DA1939 /* SZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZMeViewController.m; sourceTree = "<group>"; };
+		E78AB0521D75A94900DA1939 /* SZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZHomeViewController.h; sourceTree = "<group>"; };
+		E78AB0531D75A94900DA1939 /* SZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZHomeViewController.m; sourceTree = "<group>"; };
+		E78AB0571D75AA6A00DA1939 /* SZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
+		E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +128,7 @@
 		E72ACC1A1D6EC362001ACE21 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E78AB04C1D75A8D300DA1939 /* Main */,
 				E72ACC891D6EE28A001ACE21 /* Other */,
 				E72ACC551D6EDFC7001ACE21 /* Expend */,
 				E72ACC621D6EDFC7001ACE21 /* Vender */,
@@ -183,6 +193,43 @@
 				E7548FA81D751CAA0013B3D8 /* Const.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		E78AB04C1D75A8D300DA1939 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E78AB0561D75AA3200DA1939 /* Other */,
+				E78AB04D1D75A8D300DA1939 /* Home */,
+				E78AB04E1D75A8D300DA1939 /* Me */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E78AB04D1D75A8D300DA1939 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E78AB0521D75A94900DA1939 /* SZHomeViewController.h */,
+				E78AB0531D75A94900DA1939 /* SZHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E78AB04E1D75A8D300DA1939 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				E78AB04F1D75A93900DA1939 /* SZMeViewController.h */,
+				E78AB0501D75A93900DA1939 /* SZMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		E78AB0561D75AA3200DA1939 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E78AB0571D75AA6A00DA1939 /* SZNavigationController.h */,
+				E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,10 +355,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */,
+				E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */,
 				E708F3251D703FE40050FF34 /* UIView+Category.m in Sources */,
 				E72ACC981D6EE28A001ACE21 /* main.m in Sources */,
 				E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */,
+				E78AB0591D75AA6A00DA1939 /* SZNavigationController.m in Sources */,
 				E72ACC941D6EE28A001ACE21 /* AppDelegate.m in Sources */,
+				E78AB0541D75A94900DA1939 /* SZHomeViewController.m in Sources */,
 				E72ACC731D6EDFC7001ACE21 /* MojoModel.m in Sources */,
 				E72ACC721D6EDFC7001ACE21 /* MojoDatabase.m in Sources */,
 				E72ACC711D6EDFC7001ACE21 /* AppDatabase.m in Sources */,

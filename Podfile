@@ -29,6 +29,9 @@ target :Commen do
 	inhibit_all_warnings!
 
 	pod 'SDWebImage', '~> 3.8.1'
+	pod 'UMengSocialCOM', '~> 5.2.1'
+	pod 'JPush', '~> 2.1.8'
+
 
 	project 'Commen/Commen.xcodeproj'
 end

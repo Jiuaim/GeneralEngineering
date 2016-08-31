@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SZHomeViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()
 
 @end
 
@@ -20,6 +21,8 @@
     UIView *contentView = [self scrollBaseViewController];
     UIView *viw = [UIView horizonSeperateViewWithArray:@[@"UIView",@"UIButton",@"UIImageView"] eventBlock:^(UIView *touchView) {
         NSLog(@"%@",NSStringFromClass([touchView class]));
+        SZHomeViewController *sz = [[SZHomeViewController alloc] init];
+        [self.navigationController pushViewController:sz animated:YES];
     } categorys:@[@10,@5,@10,@10] HVPortion:3/4.0];
     UIView *viw1 = [UIView horizonSeperateViewWithArray:@[@"UIView",@"UIButton",@"UIImageView"] eventBlock:^(UIView *touchView) {
         NSLog(@"%@",NSStringFromClass([touchView class]));
