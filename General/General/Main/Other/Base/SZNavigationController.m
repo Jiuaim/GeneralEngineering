@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.delegate = self;
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromRGB(0xea8010),NSFontAttributeName:[UIFont systemFontOfSize:19.0]}];
 }
 
 

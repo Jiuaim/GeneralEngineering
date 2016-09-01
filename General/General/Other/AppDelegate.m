@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDatabase.h"
-#import "ViewController.h"
-#import "SZNavigationController.h"
+#import "SZTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -25,8 +24,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    SZNavigationController *sznavi = [[SZNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    self.window.rootViewController = sznavi;
+    
+    self.window.rootViewController = [[SZTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

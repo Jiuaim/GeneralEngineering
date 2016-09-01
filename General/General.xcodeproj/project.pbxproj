@@ -18,12 +18,14 @@
 		E72ACC961D6EE28A001ACE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72ACC8D1D6EE28A001ACE21 /* LaunchScreen.storyboard */; };
 		E72ACC971D6EE28A001ACE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72ACC8F1D6EE28A001ACE21 /* Main.storyboard */; };
 		E72ACC981D6EE28A001ACE21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ACC911D6EE28A001ACE21 /* main.m */; };
-		E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ACC931D6EE28A001ACE21 /* ViewController.m */; };
 		E72ACC9B1D6EE2A1001ACE21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72ACC9A1D6EE2A1001ACE21 /* Info.plist */; };
 		E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */; };
 		E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0501D75A93900DA1939 /* SZMeViewController.m */; };
 		E78AB0541D75A94900DA1939 /* SZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0531D75A94900DA1939 /* SZHomeViewController.m */; };
-		E78AB0591D75AA6A00DA1939 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */; };
+		E79EEE3B1D782A6100B91014 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE381D782A6100B91014 /* SZNavigationController.m */; };
+		E79EEE3C1D782A6100B91014 /* SZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE3A1D782A6100B91014 /* SZTabBarController.m */; };
+		E79EEE401D782A9B00B91014 /* SZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE3F1D782A9B00B91014 /* SZLoginViewController.m */; };
+		E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE471D78426B00B91014 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +47,6 @@
 		E72ACC8E1D6EE28A001ACE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72ACC901D6EE28A001ACE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E72ACC911D6EE28A001ACE21 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E72ACC921D6EE28A001ACE21 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E72ACC931D6EE28A001ACE21 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E72ACC9A1D6EE2A1001ACE21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = General/Info.plist; sourceTree = SOURCE_ROOT; };
 		E72ACCAD1D7036B7001ACE21 /* GeneralMacro.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMacro.pch; sourceTree = "<group>"; };
 		E7531A141D744BD2006906F0 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -60,8 +60,14 @@
 		E78AB0501D75A93900DA1939 /* SZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZMeViewController.m; sourceTree = "<group>"; };
 		E78AB0521D75A94900DA1939 /* SZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZHomeViewController.h; sourceTree = "<group>"; };
 		E78AB0531D75A94900DA1939 /* SZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZHomeViewController.m; sourceTree = "<group>"; };
-		E78AB0571D75AA6A00DA1939 /* SZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
-		E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
+		E79EEE371D782A6100B91014 /* SZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
+		E79EEE381D782A6100B91014 /* SZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
+		E79EEE391D782A6100B91014 /* SZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTabBarController.h; sourceTree = "<group>"; };
+		E79EEE3A1D782A6100B91014 /* SZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTabBarController.m; sourceTree = "<group>"; };
+		E79EEE3E1D782A9B00B91014 /* SZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZLoginViewController.h; sourceTree = "<group>"; };
+		E79EEE3F1D782A9B00B91014 /* SZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZLoginViewController.m; sourceTree = "<group>"; };
+		E79EEE461D78426B00B91014 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		E79EEE471D78426B00B91014 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,7 @@
 		E72ACC621D6EDFC7001ACE21 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				E79EEE451D78426B00B91014 /* RegexKitLite */,
 				E72ACC631D6EDFC7001ACE21 /* MojoDatabase */,
 			);
 			path = Vender;
@@ -176,8 +183,6 @@
 				E72ACC8D1D6EE28A001ACE21 /* LaunchScreen.storyboard */,
 				E72ACC8F1D6EE28A001ACE21 /* Main.storyboard */,
 				E72ACC911D6EE28A001ACE21 /* main.m */,
-				E72ACC921D6EE28A001ACE21 /* ViewController.h */,
-				E72ACC931D6EE28A001ACE21 /* ViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -226,10 +231,39 @@
 		E78AB0561D75AA3200DA1939 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				E78AB0571D75AA6A00DA1939 /* SZNavigationController.h */,
-				E78AB0581D75AA6A00DA1939 /* SZNavigationController.m */,
+				E79EEE3D1D782A8000B91014 /* Login */,
+				E79EEE361D782A6100B91014 /* Base */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		E79EEE361D782A6100B91014 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E79EEE371D782A6100B91014 /* SZNavigationController.h */,
+				E79EEE381D782A6100B91014 /* SZNavigationController.m */,
+				E79EEE391D782A6100B91014 /* SZTabBarController.h */,
+				E79EEE3A1D782A6100B91014 /* SZTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E79EEE3D1D782A8000B91014 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E79EEE3E1D782A9B00B91014 /* SZLoginViewController.h */,
+				E79EEE3F1D782A9B00B91014 /* SZLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E79EEE451D78426B00B91014 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				E79EEE461D78426B00B91014 /* RegexKitLite.h */,
+				E79EEE471D78426B00B91014 /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,16 +388,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72ACC991D6EE28A001ACE21 /* ViewController.m in Sources */,
+				E79EEE3C1D782A6100B91014 /* SZTabBarController.m in Sources */,
 				E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */,
 				E708F3251D703FE40050FF34 /* UIView+Category.m in Sources */,
+				E79EEE401D782A9B00B91014 /* SZLoginViewController.m in Sources */,
 				E72ACC981D6EE28A001ACE21 /* main.m in Sources */,
+				E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */,
 				E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */,
-				E78AB0591D75AA6A00DA1939 /* SZNavigationController.m in Sources */,
 				E72ACC941D6EE28A001ACE21 /* AppDelegate.m in Sources */,
 				E78AB0541D75A94900DA1939 /* SZHomeViewController.m in Sources */,
 				E72ACC731D6EDFC7001ACE21 /* MojoModel.m in Sources */,
 				E72ACC721D6EDFC7001ACE21 /* MojoDatabase.m in Sources */,
+				E79EEE3B1D782A6100B91014 /* SZNavigationController.m in Sources */,
 				E72ACC711D6EDFC7001ACE21 /* AppDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +517,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = General/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"BlocksKit\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-licucore",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.General;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -493,6 +556,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = General/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"BlocksKit\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-licucore",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.General;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
