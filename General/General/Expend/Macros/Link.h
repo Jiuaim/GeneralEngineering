@@ -10,4 +10,7 @@
 #define Link_h
 
 
+#define SeverHost @"https://www.huang.com"
+
+
 #endif /* Link_h */

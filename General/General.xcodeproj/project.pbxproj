@@ -26,6 +26,11 @@
 		E79EEE3C1D782A6100B91014 /* SZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE3A1D782A6100B91014 /* SZTabBarController.m */; };
 		E79EEE401D782A9B00B91014 /* SZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE3F1D782A9B00B91014 /* SZLoginViewController.m */; };
 		E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE471D78426B00B91014 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E79EEE4F1D784C6A00B91014 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE4E1D784C6A00B91014 /* UIImage+Category.m */; };
+		E79EEE521D78530100B91014 /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE511D78530100B91014 /* UIImageView+Category.m */; };
+		E79EEE551D7915B300B91014 /* SZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE541D7915B300B91014 /* SZNetworkTool.m */; };
+		E79EEE591D79207200B91014 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE581D79207200B91014 /* Reachability.m */; };
+		E7E753C61D79243900D8AD40 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,16 @@
 		E79EEE3F1D782A9B00B91014 /* SZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZLoginViewController.m; sourceTree = "<group>"; };
 		E79EEE461D78426B00B91014 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		E79EEE471D78426B00B91014 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		E79EEE4D1D784C6A00B91014 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		E79EEE4E1D784C6A00B91014 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		E79EEE501D78530100B91014 /* UIImageView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Category.h"; sourceTree = "<group>"; };
+		E79EEE511D78530100B91014 /* UIImageView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Category.m"; sourceTree = "<group>"; };
+		E79EEE531D7915B300B91014 /* SZNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNetworkTool.h; sourceTree = "<group>"; };
+		E79EEE541D7915B300B91014 /* SZNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNetworkTool.m; sourceTree = "<group>"; };
+		E79EEE571D79207200B91014 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E79EEE581D79207200B91014 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E7E753C41D79243900D8AD40 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +124,10 @@
 				E708F3241D703FE40050FF34 /* UIView+Category.m */,
 				E78AB0491D7562F100DA1939 /* UIViewController+Category.h */,
 				E78AB04A1D7562F100DA1939 /* UIViewController+Category.m */,
+				E79EEE4D1D784C6A00B91014 /* UIImage+Category.h */,
+				E79EEE4E1D784C6A00B91014 /* UIImage+Category.m */,
+				E79EEE501D78530100B91014 /* UIImageView+Category.h */,
+				E79EEE511D78530100B91014 /* UIImageView+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -154,6 +173,7 @@
 		E72ACC621D6EDFC7001ACE21 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				E79EEE561D79207200B91014 /* Reachability */,
 				E79EEE451D78426B00B91014 /* RegexKitLite */,
 				E72ACC631D6EDFC7001ACE21 /* MojoDatabase */,
 			);
@@ -231,6 +251,7 @@
 		E78AB0561D75AA3200DA1939 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E79EEE491D78494C00B91014 /* Commen */,
 				E79EEE3D1D782A8000B91014 /* Login */,
 				E79EEE361D782A6100B91014 /* Base */,
 			);
@@ -264,6 +285,26 @@
 				E79EEE471D78426B00B91014 /* RegexKitLite.m */,
 			);
 			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		E79EEE491D78494C00B91014 /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				E7E753C41D79243900D8AD40 /* MBProgressHUD+MJ.h */,
+				E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */,
+				E79EEE531D7915B300B91014 /* SZNetworkTool.h */,
+				E79EEE541D7915B300B91014 /* SZNetworkTool.m */,
+			);
+			path = Commen;
+			sourceTree = "<group>";
+		};
+		E79EEE561D79207200B91014 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E79EEE571D79207200B91014 /* Reachability.h */,
+				E79EEE581D79207200B91014 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,11 +429,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E753C61D79243900D8AD40 /* MBProgressHUD+MJ.m in Sources */,
 				E79EEE3C1D782A6100B91014 /* SZTabBarController.m in Sources */,
 				E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */,
 				E708F3251D703FE40050FF34 /* UIView+Category.m in Sources */,
 				E79EEE401D782A9B00B91014 /* SZLoginViewController.m in Sources */,
 				E72ACC981D6EE28A001ACE21 /* main.m in Sources */,
+				E79EEE521D78530100B91014 /* UIImageView+Category.m in Sources */,
 				E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */,
 				E78AB04B1D7562F100DA1939 /* UIViewController+Category.m in Sources */,
 				E72ACC941D6EE28A001ACE21 /* AppDelegate.m in Sources */,
@@ -401,6 +444,9 @@
 				E72ACC721D6EDFC7001ACE21 /* MojoDatabase.m in Sources */,
 				E79EEE3B1D782A6100B91014 /* SZNavigationController.m in Sources */,
 				E72ACC711D6EDFC7001ACE21 /* AppDatabase.m in Sources */,
+				E79EEE4F1D784C6A00B91014 /* UIImage+Category.m in Sources */,
+				E79EEE551D7915B300B91014 /* SZNetworkTool.m in Sources */,
+				E79EEE591D79207200B91014 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
