@@ -31,6 +31,21 @@
 		E79EEE551D7915B300B91014 /* SZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE541D7915B300B91014 /* SZNetworkTool.m */; };
 		E79EEE591D79207200B91014 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE581D79207200B91014 /* Reachability.m */; };
 		E7E753C61D79243900D8AD40 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */; };
+		E7E753CF1D7D6E6000D8AD40 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753CE1D7D6E6000D8AD40 /* IJKMediaFramework.framework */; };
+		E7E753D11D7D6F7D00D8AD40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D01D7D6F7D00D8AD40 /* AudioToolbox.framework */; };
+		E7E753D31D7D6F8800D8AD40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D21D7D6F8800D8AD40 /* AVFoundation.framework */; };
+		E7E753D51D7D6F9200D8AD40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D41D7D6F9200D8AD40 /* CoreGraphics.framework */; };
+		E7E753D71D7D6F9D00D8AD40 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D61D7D6F9D00D8AD40 /* CoreMedia.framework */; };
+		E7E753D91D7D6FA800D8AD40 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D81D7D6FA800D8AD40 /* CoreVideo.framework */; };
+		E7E753DB1D7D6FB500D8AD40 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753DA1D7D6FB500D8AD40 /* libbz2.1.0.tbd */; };
+		E7E753DD1D7D6FCA00D8AD40 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753DC1D7D6FCA00D8AD40 /* libz.1.1.3.tbd */; };
+		E7E753DF1D7D6FD400D8AD40 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753DE1D7D6FD400D8AD40 /* MediaPlayer.framework */; };
+		E7E753E11D7D6FDF00D8AD40 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753E01D7D6FDF00D8AD40 /* MobileCoreServices.framework */; };
+		E7E753E31D7D6FEE00D8AD40 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753E21D7D6FEE00D8AD40 /* OpenGLES.framework */; };
+		E7E753E51D7D6FF800D8AD40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753E41D7D6FF800D8AD40 /* QuartzCore.framework */; };
+		E7E753E71D7D700300D8AD40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753E61D7D700300D8AD40 /* UIKit.framework */; };
+		E7E753E91D7D700E00D8AD40 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753E81D7D700E00D8AD40 /* VideoToolbox.framework */; };
+		E7E753EC1D7D904C00D8AD40 /* loginmovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E7E753EB1D7D904C00D8AD40 /* loginmovie.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +98,21 @@
 		E79EEE581D79207200B91014 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E7E753C41D79243900D8AD40 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		E7E753CE1D7D6E6000D8AD40 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		E7E753D01D7D6F7D00D8AD40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E7E753D21D7D6F8800D8AD40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E7E753D41D7D6F9200D8AD40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7E753D61D7D6F9D00D8AD40 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E7E753D81D7D6FA800D8AD40 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E7E753DA1D7D6FB500D8AD40 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		E7E753DC1D7D6FCA00D8AD40 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		E7E753DE1D7D6FD400D8AD40 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E7E753E01D7D6FDF00D8AD40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E7E753E21D7D6FEE00D8AD40 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E7E753E41D7D6FF800D8AD40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7E753E61D7D700300D8AD40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7E753E81D7D700E00D8AD40 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		E7E753EB1D7D904C00D8AD40 /* loginmovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginmovie.mp4; sourceTree = "<group>"; };
 		EF36E68C2C48642E6B7D2D83 /* libPods-General.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-General.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +121,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E753E91D7D700E00D8AD40 /* VideoToolbox.framework in Frameworks */,
+				E7E753E71D7D700300D8AD40 /* UIKit.framework in Frameworks */,
+				E7E753E51D7D6FF800D8AD40 /* QuartzCore.framework in Frameworks */,
+				E7E753E31D7D6FEE00D8AD40 /* OpenGLES.framework in Frameworks */,
+				E7E753E11D7D6FDF00D8AD40 /* MobileCoreServices.framework in Frameworks */,
+				E7E753DF1D7D6FD400D8AD40 /* MediaPlayer.framework in Frameworks */,
+				E7E753DD1D7D6FCA00D8AD40 /* libz.1.1.3.tbd in Frameworks */,
+				E7E753DB1D7D6FB500D8AD40 /* libbz2.1.0.tbd in Frameworks */,
+				E7E753D91D7D6FA800D8AD40 /* CoreVideo.framework in Frameworks */,
+				E7E753D71D7D6F9D00D8AD40 /* CoreMedia.framework in Frameworks */,
+				E7E753D51D7D6F9200D8AD40 /* CoreGraphics.framework in Frameworks */,
+				E7E753D31D7D6F8800D8AD40 /* AVFoundation.framework in Frameworks */,
+				E7E753D11D7D6F7D00D8AD40 /* AudioToolbox.framework in Frameworks */,
+				E7E753CF1D7D6E6000D8AD40 /* IJKMediaFramework.framework in Frameworks */,
 				E72ACC751D6EE0BC001ACE21 /* libsqlite3.0.tbd in Frameworks */,
 				46E071761DF12975EFD03942 /* libPods-General.a in Frameworks */,
 			);
@@ -102,6 +146,20 @@
 		044E586084C90995F3642293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7E753E81D7D700E00D8AD40 /* VideoToolbox.framework */,
+				E7E753E61D7D700300D8AD40 /* UIKit.framework */,
+				E7E753E41D7D6FF800D8AD40 /* QuartzCore.framework */,
+				E7E753E21D7D6FEE00D8AD40 /* OpenGLES.framework */,
+				E7E753E01D7D6FDF00D8AD40 /* MobileCoreServices.framework */,
+				E7E753DE1D7D6FD400D8AD40 /* MediaPlayer.framework */,
+				E7E753DC1D7D6FCA00D8AD40 /* libz.1.1.3.tbd */,
+				E7E753DA1D7D6FB500D8AD40 /* libbz2.1.0.tbd */,
+				E7E753D81D7D6FA800D8AD40 /* CoreVideo.framework */,
+				E7E753D61D7D6F9D00D8AD40 /* CoreMedia.framework */,
+				E7E753D41D7D6F9200D8AD40 /* CoreGraphics.framework */,
+				E7E753D21D7D6F8800D8AD40 /* AVFoundation.framework */,
+				E7E753D01D7D6F7D00D8AD40 /* AudioToolbox.framework */,
+				E7E753CE1D7D6E6000D8AD40 /* IJKMediaFramework.framework */,
 				E72ACC741D6EE0BC001ACE21 /* libsqlite3.0.tbd */,
 				EF36E68C2C48642E6B7D2D83 /* libPods-General.a */,
 			);
@@ -196,6 +254,7 @@
 		E72ACC891D6EE28A001ACE21 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E7E753EA1D7D904C00D8AD40 /* Resource */,
 				E72ACC9A1D6EE2A1001ACE21 /* Info.plist */,
 				E72ACC8A1D6EE28A001ACE21 /* AppDelegate.h */,
 				E72ACC8B1D6EE28A001ACE21 /* AppDelegate.m */,
@@ -307,6 +366,14 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		E7E753EA1D7D904C00D8AD40 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E7E753EB1D7D904C00D8AD40 /* loginmovie.mp4 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72ACC9B1D6EE2A1001ACE21 /* Info.plist in Resources */,
+				E7E753EC1D7D904C00D8AD40 /* loginmovie.mp4 in Resources */,
 				E72ACC971D6EE28A001ACE21 /* Main.storyboard in Resources */,
 				E72ACC951D6EE28A001ACE21 /* Assets.xcassets in Resources */,
 				E72ACC961D6EE28A001ACE21 /* LaunchScreen.storyboard in Resources */,
@@ -561,6 +629,10 @@
 			baseConfigurationReference = A18728D8AE4C8722CE01BB23 /* Pods-General.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = General/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -600,6 +672,10 @@
 			baseConfigurationReference = E55B4B214EB6F693BDDA8B36 /* Pods-General.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = General/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

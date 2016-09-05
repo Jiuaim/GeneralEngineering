@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 #import "AppDatabase.h"
-#import "SZTabBarController.h"
 #import "SZNetworkTool.h"
 #import "Reachability.h"
+#import "SZLoginViewController.h"
 
 @interface AppDelegate () {
     Reachability *_reacha;
@@ -29,7 +29,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [[SZTabBarController alloc] init];
+    self.window.rootViewController = [[SZLoginViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;
