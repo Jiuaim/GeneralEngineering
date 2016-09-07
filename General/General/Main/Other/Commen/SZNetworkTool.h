@@ -17,18 +17,31 @@ typedef NS_ENUM(NSUInteger, NetworkStates) {
     NetworkStatesWIFI // WIFI
 };
 
+typedef NS_ENUM(NSInteger, NetworkRequestType) {
+    NetworkRequestTypeGET,  // GET请求
+    NetworkRequestTypePOST,  // POST请求
+};
 
 typedef void(^SZRequestSuccess)(id result);
-typedef void(^SZRequestError)(NSError* error);
+typedef void(^SZRequestError)(NSError *error);
 
 @interface SZNetworkTool : NSObject
 
 + (NetworkStates)getNetworkStates;
 
-// GET直接请求
-+ (void)getRequestWithString:(NSString *)string
-                   onSuccess:(SZRequestSuccess)succBlck
-                     onError:(SZRequestError)errorBlock;
+
++ (void)getNetworkRequestWithUrlString:(NSString *)urlString params:(id)params isCache:(BOOL)isCache succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
+
+
++ (void)getCacheRequestWithUrlString:(NSString *)urlString params:(id)params cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
+
+
++ (void)postNetworkRequestWithUrlString:(NSString *)urlString params:(id)params isCache:(BOOL)isCache succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
+
+
++ (void)postCacheRequestWithUrlString:(NSString *)urlString params:(id)params cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
+
+
 // GET拼接服务器请求
 + (void)getRequestWithURL:(NSString*)url
                 onSuccess:(SZRequestSuccess)succBlck

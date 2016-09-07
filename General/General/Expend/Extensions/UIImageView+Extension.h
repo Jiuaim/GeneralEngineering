@@ -1,5 +1,5 @@
 //
-//  UIImage+Category.h
+//  UIImageView+Extension.h
 //  General
 //
 //  Created by llbt on 16/9/1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Category)
-
+@interface UIImageView (Extension)
+- (void)imageWithPath:(NSString *)path;
 @end

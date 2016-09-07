@@ -1,14 +1,14 @@
 //
-//  UIViewController+Category.m
+//  UIViewController+Extension.m
 //  General
 //
 //  Created by llbt on 16/8/30.
 //  Copyright © 2016年 Huang. All rights reserved.
 //
 
-#import "UIViewController+Category.h"
+#import "UIViewController+Extension.h"
 
-@implementation UIViewController (Category)
+@implementation UIViewController (Extension)
 
 
 - (UIView *)scrollBaseViewController {

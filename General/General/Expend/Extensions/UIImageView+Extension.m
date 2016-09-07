@@ -1,15 +1,15 @@
 //
-//  UIImageView+Category.m
+//  UIImageView+Extension.m
 //  General
 //
 //  Created by llbt on 16/9/1.
 //  Copyright © 2016年 Huang. All rights reserved.
 //
 
-#import "UIImageView+Category.h"
+#import "UIImageView+Extension.h"
 #import <UIImageView+WebCache.h>
 
-@implementation UIImageView (Category)
+@implementation UIImageView (Extension)
 
 - (void)imageWithPath:(NSString *)path {
     UIImage *defaultImage = [UIImage imageNamed:@"default"];

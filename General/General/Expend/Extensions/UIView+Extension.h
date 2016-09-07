@@ -1,5 +1,5 @@
 //
-//  UIView+Category.h
+//  UIView+Extension.h
 //  General
 //
 //  Created by llbt on 16/8/26.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
 
-@interface UIView (Category)
+@interface UIView (Extension)
 
 
 /**
@@ -32,12 +32,12 @@
  *
  *  @param viewName  view的名字数组
  *  @param block     点击事件
- *  @param categorys 边距、间隔、顶部、底部(4个参数)
+ *  @param Extensions 边距、间隔、顶部、底部(4个参数)
  *  @param portion   宽高比
  *
  *  @return 底层view
  */
-+ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName eventBlock:(void(^)(UIView *touchView))block categorys:(NSArray *)categorys HVPortion:(CGFloat)portion;
++ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName eventBlock:(void(^)(UIView *touchView))block Extensions:(NSArray *)Extensions HVPortion:(CGFloat)portion;
 
 /**
  *  给view添加事件

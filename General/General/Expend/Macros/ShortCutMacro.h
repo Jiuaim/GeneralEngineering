@@ -21,7 +21,10 @@
 #define WEAK(point) __weak __typeof(point) weak##point = point;
 // block安全执行
 #define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };
-
+// URL 自动是否连接
+#define URLString(_URL_) [NSString stringWithFormat:@"%@%@",SeverHost,_URL_]
+// 沙河取对象
+#define ObjectFromUserDefault(_X_) [[NSUserDefaults standardUserDefaults] objectForKey:_X_];
 
 // 动态添加属性
 #define ADD_DYNAMIC_PROPERTY(PROPERTY_TYPE,PROPERTY_NAME,SETTER_NAME) \

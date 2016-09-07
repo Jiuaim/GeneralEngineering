@@ -9,6 +9,8 @@
 #import "SZNetworkTool.h"
 #import <MJExtension.h>
 
+#define kTimeOut 20.0
+
 @implementation SZNetworkTool
 
 // 判断网络类型
@@ -45,18 +47,44 @@
 }
 
 
-+ (void)getRequestWithURL:(NSString *)url onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
+
++ (void)requestType:(NetworkRequestType)type url:(NSString *)url params:(id)params isCache:(BOOL)isCache cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error {
+    NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
+    NSString *obsolutePath = [NSString generateAbsoluteURL:urlString params:params];
+    id cacheObject = ObjectFromUserDefault(obsolutePath)
+    if (cacheObject) {
+        succeed(cacheObject);
+        return;
+    }
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        succBlck(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorBlock(error);
-    }];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    if (type == NetworkRequestTypeGET) {
+        [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+    } else {
+        [manager POST:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+    }
 }
 
+
+
+
+
+
+
+
 + (void)getRequestWithString:(NSString *)string onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
+    NSString *urlString = [string hasSuffix:@"http"] ? string: URLString(string);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:string parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager.requestSerializer setTimeoutInterval:kTimeOut];
+    [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         succBlck(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         errorBlock(error);
@@ -64,11 +92,12 @@
 }
 
 + (void)postRequestWithURL:(NSString *)url paramters:(id)paramters onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
+    NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/plain",@"text/html",nil];
     manager.responseSerializer = [ AFHTTPResponseSerializer serializer ];
     
-    [manager POST:url parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager POST:urlString parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         succBlck(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         errorBlock(error);
@@ -77,6 +106,7 @@
 }
 
 +(void)postRequestWithURL:(NSString *)url image:(NSArray *)imageArray key:(NSString *)key paramters:(id)paramters onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
+    NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i < imageArray.count; i++) {
         NSData *data = UIImageJPEGRepresentation([imageArray objectAtIndex:i], 0.01);
@@ -85,7 +115,7 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    [manager POST:[NSString stringWithFormat:@"%@%@",SeverHost,url] parameters:paramters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [manager POST:urlString parameters:paramters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i = 0; i < imageArray.count; i++) {
             [formData appendPartWithFileData:array[i]  name:key fileName:[NSString stringWithFormat:@"%d.jpeg",i] mimeType:@"image/jpeg"];
         }

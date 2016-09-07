@@ -1,14 +1,14 @@
 //
-//  UIView+Category.m
+//  UIView+Extension.m
 //  General
 //
 //  Created by llbt on 16/8/26.
 //  Copyright © 2016年 Huang. All rights reserved.
 //
 
-#import "UIView+Category.h"
+#import "UIView+Extension.h"
 
-@implementation UIView (Category)
+@implementation UIView (Extension)
 
 
 
@@ -70,11 +70,11 @@
     return wrapperView;
 }
 
-+ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName eventBlock:(void(^)(UIView *touchView))block categorys:(NSArray *)categorys HVPortion:(CGFloat)portion {
-    CGFloat padding = [categorys[0] floatValue];
-    CGFloat inter = [categorys[1] floatValue];
-    CGFloat top = [categorys[2] floatValue];
-    CGFloat bottom = [categorys[3] floatValue];
++ (UIView *)horizonSeperateViewWithArray:(NSArray *)viewName eventBlock:(void(^)(UIView *touchView))block Extensions:(NSArray *)Extensions HVPortion:(CGFloat)portion {
+    CGFloat padding = [Extensions[0] floatValue];
+    CGFloat inter = [Extensions[1] floatValue];
+    CGFloat top = [Extensions[2] floatValue];
+    CGFloat bottom = [Extensions[3] floatValue];
     
     CGFloat width = (kScreenWidth - padding * 2 - (viewName.count - 1) * inter) / viewName.count;
     UIView *baseView = [[UIView alloc] init];
