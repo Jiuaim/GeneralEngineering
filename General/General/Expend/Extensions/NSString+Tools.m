@@ -9,6 +9,18 @@
 #import "NSString+Tools.h"
 
 @implementation NSString (Tools)
+
++ (NSString *)cachesPathString {
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSString *pathcaches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *createPath = [pathcaches stringByAppendingPathComponent:@"NetworkCache"];
+    // 判断文件夹是否存在，如果不存在，则创建
+    if (![[NSFileManager defaultManager] fileExistsAtPath:createPath]) {
+        [fileManager createDirectoryAtPath:createPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return createPath;
+}
+
 + (NSString *)generateAbsoluteURL:(NSString *)url params:(id)params {
     if (params == nil || ![params isKindOfClass:[NSDictionary class]] || [params count] == 0) {
         return url;

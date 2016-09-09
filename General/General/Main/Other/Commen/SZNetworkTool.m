@@ -46,84 +46,55 @@
     return states;
 }
 
++ (void)getNetworkRequestWithUrlString:(NSString *)urlString params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)error {
+    [self requestType:NetworkRequestTypeGET url:urlString params:params succeed:succeed error:error];
+}
 
++ (void)postNetworkRequestWithUrlString:(NSString *)urlString params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)error {
+    [self requestType:NetworkRequestTypePOST url:urlString params:params succeed:succeed error:error];
+}
 
-+ (void)requestType:(NetworkRequestType)type url:(NSString *)url params:(id)params isCache:(BOOL)isCache cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error {
++ (void)requestType:(NetworkRequestType)type url:(NSString *)url params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)err {
     NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
-    NSString *obsolutePath = [NSString generateAbsoluteURL:urlString params:params];
-    id cacheObject = ObjectFromUserDefault(obsolutePath)
-    if (cacheObject) {
-        succeed(cacheObject);
-        return;
-    }
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     if (type == NetworkRequestTypeGET) {
         [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            
+            BLOCK_EXEC(succeed,responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            
+            BLOCK_EXEC(err,error);
         }];
     } else {
         [manager POST:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            
+            BLOCK_EXEC(succeed,responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            
+            BLOCK_EXEC(err,error);
         }];
     }
 }
 
 
-
-
-
-
-
-
-+ (void)getRequestWithString:(NSString *)string onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
-    NSString *urlString = [string hasSuffix:@"http"] ? string: URLString(string);
++ (void)uploadWithurlString:(NSString *)urlString params:(id)params image:(UIImage *)image progress:(SZRequestProgress)progress succeed:(SZRequestSuccess)succeed fail:(SZRequestError)err {
+    NSString *url = [urlString hasSuffix:@"http"] ? urlString: URLString(urlString);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager.requestSerializer setTimeoutInterval:kTimeOut];
-    [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        succBlck(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorBlock(error);
-    }];
-}
-
-+ (void)postRequestWithURL:(NSString *)url paramters:(id)paramters onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
-    NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/plain",@"text/html",nil];
-    manager.responseSerializer = [ AFHTTPResponseSerializer serializer ];
-    
-    [manager POST:urlString parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        succBlck(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorBlock(error);
-    }];
-    
-}
-
-+(void)postRequestWithURL:(NSString *)url image:(NSArray *)imageArray key:(NSString *)key paramters:(id)paramters onSuccess:(SZRequestSuccess)succBlck onError:(SZRequestError)errorBlock {
-    NSString *urlString = [url hasSuffix:@"http"] ? url: URLString(url);
-    NSMutableArray *array = [NSMutableArray array];
-    for (int i = 0; i < imageArray.count; i++) {
-        NSData *data = UIImageJPEGRepresentation([imageArray objectAtIndex:i], 0.01);
-        [array addObject:data];
-    }
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    [manager POST:urlString parameters:paramters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        for (int i = 0; i < imageArray.count; i++) {
-            [formData appendPartWithFileData:array[i]  name:key fileName:[NSString stringWithFormat:@"%d.jpeg",i] mimeType:@"image/jpeg"];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        NSData *imageData = UIImageJPEGRepresentation(image, 1);
+        NSString *imageFileName;
+        if (imageFileName == nil || imageFileName.length == 0) {
+            imageFileName = @"default";
         }
-    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        succBlck(responseObject);
+        [formData appendPartWithFileData:imageData name:imageFileName fileName:imageFileName mimeType:@"image/jpeg"];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        CGFloat uploadKB = uploadProgress.completedUnitCount / 1024.0;
+        CGFloat totalKB = uploadProgress.totalUnitCount / 1024.0;
+        BLOCK_EXEC(progress,uploadKB,totalKB);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        BLOCK_EXEC(succeed,responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorBlock(error);
+        BLOCK_EXEC(err,error);
     }];
+    
 }
 
 @end

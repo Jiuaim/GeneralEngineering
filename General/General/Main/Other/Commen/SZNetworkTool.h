@@ -24,39 +24,25 @@ typedef NS_ENUM(NSInteger, NetworkRequestType) {
 
 typedef void(^SZRequestSuccess)(id result);
 typedef void(^SZRequestError)(NSError *error);
+typedef void(^SZRequestProgress)(CGFloat writeKB, CGFloat totalKB);
 
 @interface SZNetworkTool : NSObject
 
 + (NetworkStates)getNetworkStates;
 
 
-+ (void)getNetworkRequestWithUrlString:(NSString *)urlString params:(id)params isCache:(BOOL)isCache succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
++ (void)getNetworkRequestWithUrlString:(NSString *)urlString params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
 
 
-+ (void)getCacheRequestWithUrlString:(NSString *)urlString params:(id)params cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
++ (void)postNetworkRequestWithUrlString:(NSString *)urlString params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
 
 
-+ (void)postNetworkRequestWithUrlString:(NSString *)urlString params:(id)params isCache:(BOOL)isCache succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
++ (void)uploadWithurlString:(NSString *)urlString
+                 parameters:(id)parameters
+                      image:(UIImage *)image
+                   progress:(SZRequestProgress) progress
+                    succeed:(SZRequestSuccess)succeed
+                       fail:(SZRequestError)error;
 
-
-+ (void)postCacheRequestWithUrlString:(NSString *)urlString params:(id)params cacheTime:(float)time succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
-
-
-// GET拼接服务器请求
-+ (void)getRequestWithURL:(NSString*)url
-                onSuccess:(SZRequestSuccess)succBlck
-                  onError:(SZRequestError)errorBlock;
-// POST拼接服务器请求
-+ (void)postRequestWithURL:(NSString*)url
-                 paramters:(id)paramters
-                 onSuccess:(SZRequestSuccess)succBlck
-                   onError:(SZRequestError)errorBlock;
-// 上传图片请求
-+ (void)postRequestWithURL:(NSString*)url
-                     image:(NSArray*)imageArray
-                       key:(NSString*)key
-                 paramters:(id)paramters
-                 onSuccess:(SZRequestSuccess)succBlck
-                   onError:(SZRequestError)errorBlock;
 
 @end

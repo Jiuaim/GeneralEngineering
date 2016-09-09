@@ -10,7 +10,7 @@
 #define Link_h
 
 
-#define SeverHost @"https://www.huang.com"
+#define SeverHost @"http://live.9158.com"
 
 
 #endif /* Link_h */

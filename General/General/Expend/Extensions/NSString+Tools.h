@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Tools)
++ (NSString *)cachesPathString;
+
 //
 + (NSString *)generateAbsoluteURL:(NSString *)url params:(id)params;
 @end
