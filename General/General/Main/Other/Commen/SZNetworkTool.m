@@ -60,7 +60,8 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     if (type == NetworkRequestTypeGET) {
         [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            BLOCK_EXEC(succeed,responseObject);
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+            BLOCK_EXEC(succeed,dic);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             BLOCK_EXEC(err,error);
         }];

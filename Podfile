@@ -17,6 +17,7 @@ target :General do
 	pod 'Masonry', '~> 1.0.1'
 	pod 'BlocksKit', '~> 2.2.5'
     pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'LFLiveKit', '~> 2.3'
 
 
 	project 'General/General.xcodeproj'

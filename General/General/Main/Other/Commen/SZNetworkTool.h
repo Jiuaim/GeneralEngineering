@@ -37,12 +37,7 @@ typedef void(^SZRequestProgress)(CGFloat writeKB, CGFloat totalKB);
 + (void)postNetworkRequestWithUrlString:(NSString *)urlString params:(id)params succeed:(SZRequestSuccess)succeed error:(SZRequestError)error;
 
 
-+ (void)uploadWithurlString:(NSString *)urlString
-                 parameters:(id)parameters
-                      image:(UIImage *)image
-                   progress:(SZRequestProgress) progress
-                    succeed:(SZRequestSuccess)succeed
-                       fail:(SZRequestError)error;
++ (void)uploadWithurlString:(NSString *)urlString params:(id)params image:(UIImage *)image progress:(SZRequestProgress)progress succeed:(SZRequestSuccess)succeed fail:(SZRequestError)err;
 
 
 @end

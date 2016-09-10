@@ -26,6 +26,10 @@
 		E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE471D78426B00B91014 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E79EEE551D7915B300B91014 /* SZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE541D7915B300B91014 /* SZNetworkTool.m */; };
 		E79EEE591D79207200B91014 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E79EEE581D79207200B91014 /* Reachability.m */; };
+		E7CB23F71D82D3720061027B /* SZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CB23F61D82D3720061027B /* SZUser.m */; };
+		E7CB23FA1D82D9140061027B /* SZHotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CB23F91D82D9140061027B /* SZHotCollectionViewCell.m */; };
+		E7CB23FD1D82E3350061027B /* SZLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CB23FC1D82E3350061027B /* SZLiveViewController.m */; };
+		E7CB24001D82E93C0061027B /* UIDevice+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CB23FF1D82E93C0061027B /* UIDevice+Device.m */; };
 		E7E753C61D79243900D8AD40 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */; };
 		E7E753CF1D7D6E6000D8AD40 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753CE1D7D6E6000D8AD40 /* IJKMediaFramework.framework */; };
 		E7E753D11D7D6F7D00D8AD40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E753D01D7D6F7D00D8AD40 /* AudioToolbox.framework */; };
@@ -90,6 +94,14 @@
 		E79EEE541D7915B300B91014 /* SZNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNetworkTool.m; sourceTree = "<group>"; };
 		E79EEE571D79207200B91014 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E79EEE581D79207200B91014 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E7CB23F51D82D3720061027B /* SZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZUser.h; sourceTree = "<group>"; };
+		E7CB23F61D82D3720061027B /* SZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZUser.m; sourceTree = "<group>"; };
+		E7CB23F81D82D9140061027B /* SZHotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZHotCollectionViewCell.h; sourceTree = "<group>"; };
+		E7CB23F91D82D9140061027B /* SZHotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZHotCollectionViewCell.m; sourceTree = "<group>"; };
+		E7CB23FB1D82E3350061027B /* SZLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZLiveViewController.h; sourceTree = "<group>"; };
+		E7CB23FC1D82E3350061027B /* SZLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZLiveViewController.m; sourceTree = "<group>"; };
+		E7CB23FE1D82E93C0061027B /* UIDevice+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Device.h"; sourceTree = "<group>"; };
+		E7CB23FF1D82E93C0061027B /* UIDevice+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Device.m"; sourceTree = "<group>"; };
 		E7E753C41D79243900D8AD40 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		E7E753C51D79243900D8AD40 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		E7E753CE1D7D6E6000D8AD40 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
@@ -286,6 +298,12 @@
 			children = (
 				E78AB0521D75A94900DA1939 /* SZHomeViewController.h */,
 				E78AB0531D75A94900DA1939 /* SZHomeViewController.m */,
+				E7CB23F51D82D3720061027B /* SZUser.h */,
+				E7CB23F61D82D3720061027B /* SZUser.m */,
+				E7CB23F81D82D9140061027B /* SZHotCollectionViewCell.h */,
+				E7CB23F91D82D9140061027B /* SZHotCollectionViewCell.m */,
+				E7CB23FB1D82E3350061027B /* SZLiveViewController.h */,
+				E7CB23FC1D82E3350061027B /* SZLiveViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -390,6 +408,8 @@
 				E7E754391D7FFEF600D8AD40 /* UIViewController+Category.h */,
 				E7E7543A1D7FFEF600D8AD40 /* UIViewController+Extension.h */,
 				E7E7543B1D7FFEF600D8AD40 /* UIViewController+Extension.m */,
+				E7CB23FE1D82E93C0061027B /* UIDevice+Device.h */,
+				E7CB23FF1D82E93C0061027B /* UIDevice+Device.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,6 +448,7 @@
 				TargetAttributes = {
 					E72ACC171D6EC362001ACE21 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V5NT75T7AC;
 					};
 				};
 			};
@@ -518,17 +539,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7E753C61D79243900D8AD40 /* MBProgressHUD+MJ.m in Sources */,
+				E7CB23F71D82D3720061027B /* SZUser.m in Sources */,
 				E79EEE3C1D782A6100B91014 /* SZTabBarController.m in Sources */,
 				E7E7543C1D7FFEF600D8AD40 /* NSString+Tools.m in Sources */,
 				E78AB0511D75A93900DA1939 /* SZMeViewController.m in Sources */,
 				E79EEE401D782A9B00B91014 /* SZLoginViewController.m in Sources */,
+				E7CB23FD1D82E3350061027B /* SZLiveViewController.m in Sources */,
 				E72ACC981D6EE28A001ACE21 /* main.m in Sources */,
 				E7E7543E1D7FFEF600D8AD40 /* UIView+Extension.m in Sources */,
 				E79EEE481D78426B00B91014 /* RegexKitLite.m in Sources */,
 				E7E7543F1D7FFEF600D8AD40 /* UIViewController+Extension.m in Sources */,
 				E7E754301D7FFDB900D8AD40 /* SZCircle.m in Sources */,
 				E72ACC941D6EE28A001ACE21 /* AppDelegate.m in Sources */,
+				E7CB24001D82E93C0061027B /* UIDevice+Device.m in Sources */,
 				E78AB0541D75A94900DA1939 /* SZHomeViewController.m in Sources */,
+				E7CB23FA1D82D9140061027B /* SZHotCollectionViewCell.m in Sources */,
 				E72ACC731D6EDFC7001ACE21 /* MojoModel.m in Sources */,
 				E72ACC721D6EDFC7001ACE21 /* MojoDatabase.m in Sources */,
 				E79EEE3B1D782A6100B91014 /* SZNavigationController.m in Sources */,
@@ -651,6 +676,8 @@
 			baseConfigurationReference = A18728D8AE4C8722CE01BB23 /* Pods-General.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -686,6 +713,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.General;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -694,6 +722,8 @@
 			baseConfigurationReference = E55B4B214EB6F693BDDA8B36 /* Pods-General.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -729,6 +759,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.General;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
