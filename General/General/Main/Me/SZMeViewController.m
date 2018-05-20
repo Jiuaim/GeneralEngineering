@@ -18,6 +18,14 @@
 
 @implementation SZMeViewController
 
+- (void)hsz_viewController {
+    NSLog(@"confuse test");
+}
+
++ (void)hsz_confuseTest {
+    NSLog(@"confuse test");
+}
+
 - (UIView *)livingPreView {
     if (!_livingPreView) {
         UIView *livingPreView = [[UIView alloc] initWithFrame:self.view.bounds];

@@ -1,9 +1,6 @@
 #ifndef Demo_codeObfuscation_h
 #define Demo_codeObfuscation_h
-//confuse string at Sun May 20 11:43:58 CST 2018
-#define getNetworkStates yjZPEJemdsNEBEus
-#define getNetworkRequestWithUrlString xyPdKEEeEPcUZybD
-#define postNetworkRequestWithUrlString FNGTPiALpUARqOjo
-#define requestType YWRsifLrcLmfYkiU
-#define uploadWithurlString BUdCcUhBNRKAGJpQ
+//confuse string at Sun May 20 12:49:30 CST 2018
+#define hsz_confuseTest LYjCTvIJZvidrUcP
+#define hsz_viewController EkoRFIBHztCPfhAZ
 #endif

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SZMeViewController : UIViewController
-
+- (void)hsz_viewController;
++ (void)hsz_confuseTest;
 @end
