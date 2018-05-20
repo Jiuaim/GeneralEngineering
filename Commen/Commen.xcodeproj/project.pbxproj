@@ -114,7 +114,6 @@
 				E72ACC371D6ECC52001ACE21 /* Sources */,
 				E72ACC381D6ECC52001ACE21 /* Frameworks */,
 				E72ACC391D6ECC52001ACE21 /* Resources */,
-				DE22B627457E16505E4C1C3B /* [CP] Embed Pods Frameworks */,
 				67536A73E5094C906C86403E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -178,13 +177,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Commen-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67536A73E5094C906C86403E /* [CP] Copy Pods Resources */ = {
@@ -193,28 +195,40 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Commen/Pods-Commen-resources.sh",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/UMSocialSDKResourcesNew.bundle",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/WeiboSDK.bundle",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSCommentDetailController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSCommentInputController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSCommentInputControlleriPad.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMShareEditViewController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMShareEditViewControlleriPad.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSLoginViewController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSnsAccountViewController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/SocialSDKXib/UMSShareListController.xib",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/en.lproj",
+				"${PODS_ROOT}/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/zh-Hans.lproj",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResourcesNew.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSCommentDetailController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSCommentInputController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSCommentInputControlleriPad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMShareEditViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMShareEditViewControlleriPad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSLoginViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSnsAccountViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSShareListController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Commen/Pods-Commen-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE22B627457E16505E4C1C3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Commen/Pods-Commen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

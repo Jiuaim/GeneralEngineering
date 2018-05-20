@@ -35,6 +35,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>SDWebImage</string>
 			<key>Type</key>
@@ -43,6 +45,8 @@ THE SOFTWARE.
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright jpush.cn</string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>JPush</string>
 			<key>Type</key>
@@ -52,6 +56,8 @@ THE SOFTWARE.
 			<key>FooterText</key>
 			<string>Copyright 2011 - 2016 UMeng.com. All rights reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>UMengSocialCOM</string>
 			<key>Type</key>

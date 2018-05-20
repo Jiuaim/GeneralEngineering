@@ -17,6 +17,7 @@
 #import "Link.h"// 接口定义相关
 #import "Const.h"// 常量
 
-
+// https://blog.csdn.net/yiyaaixuexi/article/details/29201699
+#import "codeObfuscation.h"
 
 #endif /* GeneralMacro_pch */

@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Jiuaim/Private_repos.git'
+
 
 workspace 'GeneralEngineering'
 project 'General/General.xcodeproj'
