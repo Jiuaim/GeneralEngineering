@@ -17,6 +17,9 @@
 #import "Link.h"// 接口定义相关
 #import "Const.h"// 常量
 
+// STCObfuscator
+// Xcode环境变量
+// https://www.cnblogs.com/shirley-1019/p/3823906.html
 // 自动查询hsz_前缀方法混淆
 // https://www.jianshu.com/p/0d42e5c6361c
 // 念茜混淆
